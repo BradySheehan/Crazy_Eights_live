@@ -1,0 +1,24 @@
+* {padding:0; margin:0;}
+
+body { background: #eee; }
+
+#title {
+	position: relative;
+	font: 75px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	/*color: rgba(0,0,255,0.5);*/
+	color: rgba(200,0,0,0.5);
+	padding-top:2px;
+	padding-left: 10px;
+	float:right;
+	margin-right: 4%;
+	margin-top: 2%;
+}
+
+#title:after {
+	content: "Crazy Eights";
+	position: absolute;
+	left: 6px;
+	top: 5px;
+	color: rgba(255,0,0,0.5);
+}

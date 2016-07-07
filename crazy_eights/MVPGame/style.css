@@ -1,0 +1,152 @@
+* {padding:0; margin:0;}
+
+.div-width {
+	left:25%;
+	width:500px;
+	color: white;
+}
+
+#before_game {
+	align-items: center;
+	justify-content: center;
+	padding-top:15%;
+}
+
+#computerHand {
+	margin-top: 10px;
+}
+#table {
+	left:25%;
+	width:145px;
+	color: white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#c,#s,#d,#h {
+	font-size: xx-large;
+	color:black;
+}
+
+body {
+	background-color: green;
+}
+
+#ruleopen {
+	margin-left: 0px;
+	vertical-align: top;
+}
+
+#ruleclose {
+	margin-left:0px;
+}
+
+#ruleReference {
+/*	margin-left: 200px;
+*/	clear:both;
+	vertical-align: top;
+	color: white;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+
+.button-link {
+	margin: 10px 10px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#forfeit {
+	float:left;
+	vertical-align: top;
+}
+
+#title {
+	position: relative;
+	font: 75px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	/*color: rgba(0,0,255,0.5);*/
+	color: rgba(200,0,0,0.5);
+	padding-top:2px;
+	padding-left: 10px;
+	float:right;
+	margin-right: 4%;
+	margin-top: 2%;
+}
+
+#title:after {
+	content: "Crazy Eights";
+	position: absolute;
+	left: 6px;
+	top: 5px;
+	color: rgba(255,0,0,0.5);
+}
+
+
+#choice {
+	content: "none";
+}
+
+#suits {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#suitMenu {
+/*	opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+	color:black;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	position:absolute;
+	height:70px;
+	left:500px;
+	top:102px;
+	display:none;
+	cursor:pointer;
+	font-size:large;
+	margin: 10px 10px;
+	padding: 10px 15px;
+	background-color: #F8F8F8;
+}
+#difficulty_select:after{
+   color: white;
+   content: ' ▾';
+
+}
+
+select {
+  border-radius: 0 0 0 0;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-right-color: gray;
+  border-bottom-color: gray;
+  border-left-width: 2px;
+  border-top-width: 2px;
+  font-weight: bold;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  background: black;
+  color:white;
+  font-size: 12px;
+  text-align: left;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/down_arrow.png) no-repeat black;
+  background-size: 10px 5px;
+  background-position: 79px;
+
+}
+
+#footer {
+	float:right;
+	padding-top:150px;
+	margin-right:2%;
+	position: relative;
+}

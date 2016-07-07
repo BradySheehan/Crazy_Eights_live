@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>
+      Crazy Eights, MVP version
+  </title>
+  <!-- Model classes -->
+  <script type="text/javascript" src="Card.js">
+  </script>
+  <script type="text/javascript" src="Deck.js">
+  </script>
+  <script type="text/javascript" src="Pile.js">
+  </script>
+  <script type="text/javascript" src="Player.js">
+  </script>
+  <!-- View and Presenter classes -->
+  <script type="text/javascript" src="View.js">
+  </script>
+  <script type="text/javascript" src="Presenter.js">
+  </script>
+  <!-- Main program -->
+  <script type="text/javascript" src="Main.js">
+  </script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onload="init();">
+<h1><span id="title">Crazy Eights</span></h1>
+<div id="before_game" style="display:flex;">
+<!--    <select name="difficulty level" id="difficulty_select">
+        <option value = "select" selected = "selected">Difficulty</option>
+        <option value = "very easy">very easy</option>
+        <option value = "easy">easy</option>
+        <option value = "medium">medium</option>
+    </select> -->
+    <button class="button-link" type="button" id="start_button">Click to Start</button>
+    <span id="choice"></span>
+</div>
+
+<div id="game_start" style='display:none;'>
+    <div class="div-width" id="computerHand" style='position:relative;height:100px'></div>
+    <div id="table" style='position:relative;height:100px;'></div>
+    <div class="div-width" id="playerHand" style='position:relative;height:100px;cursor:pointer'></div>
+    <div id="suitMenu" style='display:none;'>
+        <p>What suit would you like the 8 to be?</p>
+        <div id="suits">
+            <span id="c">&clubs;</span>
+            <span id="d" style='color:red'>&diams;</span>
+            <span id="h" style='color:red'>&hearts;</span>
+            <span id="s">&spades;</span>
+        </div>
+    </div>
+    <div id="forfeit">
+        <button class="button-link">Forfeit and Play Again</button>
+    </div>
+    <div id="ruleReference" style="display:none;">
+        <h3>The rules are easy!</h3>
+        <ul>
+            <li>The object of the game is to empty your hand first.</li>
+            <li>You can play an 8 at any time. If you play an 8, you pick  what suit you want it to have.</li>
+            <li>You can play any card that either matches in suit or value to the card on the top of the pile.</li>
+            <li>If you don't have a card to play, select one from the deck!</li>
+        </ul>
+        <button class="button-link" type="button" id="ruleclose">Close</button>
+    </div>
+    <div id="ruleopen" style="display:inline-block;">
+        <button class="button-link" type="button">Need Help?</button>
+    </div>
+</div>
+</body>
+</html>

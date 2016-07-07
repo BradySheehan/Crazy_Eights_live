@@ -116,7 +116,7 @@ body {
 }
 #difficulty_select:after{
    color: white;
-   content: ' â–¾';
+   content: ' ▾';
 
 }
 
